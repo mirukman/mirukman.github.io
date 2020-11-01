@@ -25,19 +25,19 @@ tags: [react-native,리액트,네이티브,우분투,안드로이드,개발환�
 0.36.0버전 설치
 
 ~~~ bash
-sudo curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.36.0/install.sh | bash
+$ sudo curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.36.0/install.sh | bash
 ~~~
 
 <br>
 이제 ~/.bashrc 파일에 nvm 변수가 추가되었을 것이다. source 명령어로 bash shell에서 nvm 변수를 업데이트 시켜주어야한다.
 ~~~ bash
-source ~/.bashrc
+$ source ~/.bashrc
 ~~~
 
 버전을 확인해보면 
 
 ~~~ bash
-nvm --version
+$ nvm --version
 > 0.36.0
 ~~~
 
@@ -50,7 +50,7 @@ nvm이 잘 설치되었다.
 아래 명령어를 입력하면
 
 ~~~ bash
-nvm ls
+$ nvm ls
 ~~~
 
 설치되어있거나 설치할 수 있는 node 버전들이 출력된다.
@@ -58,31 +58,31 @@ nvm ls
 최신 안정화버전을 설치하기 위해 아래 명령을 입력한다.
 
 ~~~ bash
-nvm install --lts
+$ nvm install --lts
 ~~~
 
 혹은 특정 버전을 설치하고 싶다면 아래와 같이 입력하면 된다.
 
 ~~~ bash
-nvm install <버전>
+$ nvm install <버전>
 ~~~
 
 이후 설치가 잘 되었는지 확인
 
 ~~~ bash
-node --version
+$ node --version
 > 12.19.0
 ~~~
 
 ~~~ bash
-npm --version
+$ npm --version
 > 6.14.8
 ~~~
 
 여러 버전의 노드가 설치되어있을 때 특정 노드를 사용하는 방법
 
 ~~~ bash
-nvm use <버전>
+$ nvm use <버전>
 ~~~
 
 <br>
@@ -101,7 +101,7 @@ $ npm install -g react-native-cli
 이제 특정 폴더 혹은 워크스페이스로 이동해서 아래 명령어로 react-native 앱을 생성할 수 있다.
 
 ~~~ bash
-react-native init SampleProject
+$ react-native init SampleProject
 ~~~
 
 <br>
@@ -113,26 +113,28 @@ JDK는 설치되었다고 가정한다. 설치되지 않았다면 jdk를 설치�
 
 + 안드로이드 설치
 
-리눅스 버전 안드로이드 스튜디오 다운로드 링크
-
-[https://developer.android.com/studio?hl=ko](https://developer.android.com/studio?hl=ko)
+~~~ bash
+$ sudo apt-add-repository ppa:maarten-fonville/android-studio
+$ sudo apt-get update
+$ sudo apt-get install android-studio
+~~~
 
 <br>
 
 + ANDROID_HOME 환경변수 설정
 
 ~~~ bash
-sudo vim /etc/bash.bashrc
+$ sudo vim /etc/bash.bashrc
 ~~~
 
 아래 코드를 마지막 줄에 붙여넣는다.
 
 ~~~ bash
-export ANDROID_HOME=$HOME/Android/Sdk
-export PATH=$PATH:$ANDROID_HOME/emulator
-export PATH=$PATH:$ANDROID_HOME/tools
-export PATH=$PATH:$ANDROID_HOME/tools/bin
-export PATH=$PATH:$ANDROID_HOME/platform-tools
+$ export ANDROID_HOME=$HOME/Android/Sdk
+$ export PATH=$PATH:$ANDROID_HOME/emulator
+$ export PATH=$PATH:$ANDROID_HOME/tools
+$ export PATH=$PATH:$ANDROID_HOME/tools/bin
+$ export PATH=$PATH:$ANDROID_HOME/platform-tools
 ~~~
 
 <br>
@@ -179,9 +181,9 @@ export PATH=$PATH:$ANDROID_HOME/platform-tools
 리눅스에서 에뮬레이터 생성시 일어날 수 있는 문제가 있다. 'kvm permission denied'와 같은 경고 메시지가 뜬다면 사용자 등록이 되지 않아서 생기는 것이다. /dev/kvm에 사용자를 추가해주면 되는데, 명령어들을 차례대로 입력한다.
 
 ~~~ bash
-sudo apt install qemu-kvm
-sudo adduser $USER kvm
-sudo chown $USER /dev/kvm
+$ sudo apt install qemu-kvm
+$ sudo adduser $USER kvm
+$ sudo chown $USER /dev/kvm
 ~~~
 
 <br>
@@ -201,12 +203,12 @@ watchman은 페이스북에서 만든 툴인데 코드 수정 시 곧바로 화�
 이후 다운받은 압축파일이 있는 경로(~/Downloads)로 이동하여 아래 명령어 차례로 입력
 
 ~~~ bash
-unzip watchman-*-linux.zip
-sudo mkdir -p /usr/local/{bin,lib} /usr/local/var/run/watchman
-sudo cp bin/* /usr/local/bin
-sudo cp lib/* /usr/local/lib
-sudo chmod 755 /usr/local/bin/watchman
-sudo chmod 2777 /usr/local/var/run/watchman
+$ unzip watchman-*-linux.zip
+$ sudo mkdir -p /usr/local/{bin,lib} /usr/local/var/run/watchman
+$ sudo cp bin/* /usr/local/bin
+$ sudo cp lib/* /usr/local/lib
+$ sudo chmod 755 /usr/local/bin/watchman
+$ sudo chmod 2777 /usr/local/var/run/watchman
 ~~~
 
 이제 react-native 앱에서는 watchman을 사용할 수 있는 상태가 되었다.
@@ -217,11 +219,11 @@ sudo chmod 2777 /usr/local/var/run/watchman
 아까 생성해둔 'SampleProject' 디렉토리로 이동
 
 ~~~ bash
-react-native start
+$ react-native start
 ~~~
 
 ~~~ bash
-react-native run-android
+$ react-native run-android
 ~~~
 
 에뮬레이터가 실행되면서 화면이 나타난다.
