@@ -180,7 +180,32 @@ sudo chown $USER /dev/kvm
 
 <br>
 
-## 4. 리액트 네이티브 앱 실행 ##
+## 4. Watchman 설치 ##
+---
+
+watchman은 페이스북에서 만든 툴인데 코드 수정 시 곧바로 화면에 변경사항을 적용시켜준다.
+
+아래 링크는 페이스북 watchman 깃허브 저장소이다.
+
+[https://github.com/facebook/watchman/releases/](https://github.com/facebook/watchman/releases/)
+
+최신 버전을 받으면 된다.(리눅스라면 watchman-v0000.00.00.00-linux.zip 파일)
+
+<br>
+이후 다운받은 압축파일이 있는 경로(~/Downloads)로 이동하여 아래 명령어 차례로 입력
+
+~~~ bash
+unzip watchman-*-linux.zip
+sudo mkdir -p /usr/local/{bin,lib} /usr/local/var/run/watchman
+sudo cp bin/* /usr/local/bin
+sudo cp lib/* /usr/local/lib
+sudo chmod 755 /usr/local/bin/watchman
+sudo chmod 2777 /usr/local/var/run/watchman
+~~~
+
+이제 react-native 앱에서는 watchman을 사용할 수 있는 상태가 되었다.
+
+## 5. 리액트 네이티브 앱 실행 ##
 ---
 
 아까 생성해둔 'SampleProject' 디렉토리로 이동
@@ -193,3 +218,4 @@ react-native start
 react-native run-android
 ~~~
 
+에뮬레이터가 실행되면서 화면이 나타난다.
