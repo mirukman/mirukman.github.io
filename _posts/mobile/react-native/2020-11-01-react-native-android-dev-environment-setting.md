@@ -122,7 +122,7 @@ JDK는 설치되었다고 가정한다. 설치되지 않았다면 jdk를 설치�
 + ANDROID_HOME 환경변수 설정
 
 ~~~ bash
-sudo vim /etc/
+sudo vim /etc/bash.bashrc
 ~~~
 
 아래 코드를 마지막 줄에 붙여넣는다.
