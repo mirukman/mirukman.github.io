@@ -201,10 +201,10 @@ watchman은 페이스북에서 만든 툴인데 코드 수정 시 곧바로 화�
 이후 다운받은 압축파일이 있는 경로(~/Downloads)로 이동하여 아래 명령어 차례로 입력
 
 ~~~ bash
-unzip watchman-\*-linux.zip
+unzip watchman-*-linux.zip
 sudo mkdir -p /usr/local/{bin,lib} /usr/local/var/run/watchman
-sudo cp bin/\* /usr/local/bin
-sudo cp lib/\* /usr/local/lib
+sudo cp bin/* /usr/local/bin
+sudo cp lib/* /usr/local/lib
 sudo chmod 755 /usr/local/bin/watchman
 sudo chmod 2777 /usr/local/var/run/watchman
 ~~~
