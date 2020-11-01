@@ -100,14 +100,14 @@ $ npm install -g react-native-cli
 
 이제 특정 폴더 혹은 워크스페이스로 이동해서 아래 명령어로 react-native 앱을 생성할 수 있다.
 
-~~ bash
+~~~ bash
 react-native init SampleProject
 ~~~
 
 <br>
 
 ## 3. 안드로이드 스튜디오 설치 ##
-~~~
+---
 
 JDK는 설치되었다고 가정한다. 설치되지 않았다면 jdk를 설치하고 /etc/bash.bashrc에 JAVA_HOME 환경변수를 추가해주면 된다.
 
@@ -127,11 +127,13 @@ sudo vim /etc/
 
 아래 코드를 마지막 줄에 붙여넣는다.
 
+~~~ bash
 export ANDROID_HOME=$HOME/Android/Sdk
 export PATH=$PATH:$ANDROID_HOME/emulator
 export PATH=$PATH:$ANDROID_HOME/tools
 export PATH=$PATH:$ANDROID_HOME/tools/bin
 export PATH=$PATH:$ANDROID_HOME/platform-tools
+~~~
 
 <br>
 
@@ -141,9 +143,13 @@ export PATH=$PATH:$ANDROID_HOME/platform-tools
 
 기본적으로는 리액트 네이티브를 실행하기 위한 안드로이드 버전(현재 기준 안드로이드10-Q SDK가 설치되어있어야한다.)
 
+<br>
+
+
+아래 문서에 매우 친절하게 안드로이드 에뮬레이팅을 위한 설정 방법이 나와있다.
+
 [https://reactnative.dev/docs/environment-setup](https://reactnative.dev/docs/environment-setup)
 
-이 문서에 매우 친절하게 안드로이드 에뮬레이팅을 위한 설정 방법이 나와있다.
 
 보기 힘들다면 간단하게 아래에 정리된 내용을 따라하면된다.
 
@@ -195,10 +201,10 @@ watchman은 페이스북에서 만든 툴인데 코드 수정 시 곧바로 화�
 이후 다운받은 압축파일이 있는 경로(~/Downloads)로 이동하여 아래 명령어 차례로 입력
 
 ~~~ bash
-unzip watchman-*-linux.zip
+unzip watchman-\*-linux.zip
 sudo mkdir -p /usr/local/{bin,lib} /usr/local/var/run/watchman
-sudo cp bin/* /usr/local/bin
-sudo cp lib/* /usr/local/lib
+sudo cp bin/\* /usr/local/bin
+sudo cp lib/\* /usr/local/lib
 sudo chmod 755 /usr/local/bin/watchman
 sudo chmod 2777 /usr/local/var/run/watchman
 ~~~
