@@ -27,11 +27,17 @@ const obj = {
 
 실행을 하니 에러가 발생했다.
 
-![에러화면](https://mirukman.github.io/images/mobile/react-native/uuid-error/error-view.png){: width="100%" height="100%"}
+![에러화면](https://mirukman.github.io/images/mobile/react-native/uuid-error/error-view-1.png){: width="100%" height="100%"}
 
-구글 검색을 해봤다. uuid 모듈이 업데이트되고 사용법이 달라졌다.
+중간을 보면 아래와 같은 에러 메시지가 보인다.
+
+<span style="color:red">Unable to resolve module 'uuid/v4'</span>
+
+구글에서 검색을 해봤다. uuid 모듈이 업데이트되고 사용법이 달라졌다는 것이다.
 
 [https://www.npmjs.com/package/uuid](https://www.npmjs.com/package/uuid) 에서 uuid 사용법을 확인하고 프로젝트에 적용했다.
+
+바뀐 사용법은 아래와 같았다.
 
 ~~~ javascript
 import {v4 as uuidv4} from 'uuid';
@@ -46,6 +52,10 @@ const obj = {
 
 그러니 이번에는 런타임 에러가 발생했다.
 
+![에러화면](https://mirukman.github.io/images/mobile/react-native/uuid-error/error-view-2.png){: width="100%" height="100%"}
+
+중요한 에러 메시지는 아래와 같다.
+
 <span style="color:red">crypto.getRandomValues() not supported</span>
 
 stack-overflow에서 같은 문제를 가진 사람의 질문을 찾았고 'react-native-get-random-values' 모듈을 설치하면 된다는 것을 알았다.
@@ -54,7 +64,7 @@ stack-overflow에서 같은 문제를 가진 사람의 질문을 찾았고 'reac
 npm install --save react-native-get-random-values
 ~~~
 
-설치 후 uuid를 import하기 전에 'react-navigation-get-random-values'를 import 해준다.
+설치 후 uuid를 import하기 전에 'react-navigation-get-random-values'를 먼저 import 해준다.
 
 ~~~ javascript
 import 'react-native-get-random-values';
@@ -69,3 +79,4 @@ const obj = {
 ~~~
 
 이후 실행을 했더니 문제없이 동작했다.
+
