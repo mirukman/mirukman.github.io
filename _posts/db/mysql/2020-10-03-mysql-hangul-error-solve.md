@@ -1,6 +1,6 @@
 ---
 title: Ubuntu MySQL 한글 에러 해결
-author: devbooja
+author: mirukman
 date: 2020-10-03 17:00:00 +0800
 categories: [DB, MySQL]
 tags: [mysql한글]
@@ -8,7 +8,7 @@ tags: [mysql한글]
 
 Ubuntu 18.04 버전에서 MySQL 설치 후 테이블에 한글 데이터 입력이 되지 않는 문제
 
-![한글에러](https://devbooja.github.io/images/db/mysql/mysql-hangul-error/insert-error.png){: width="100%" height="100%"}
+![한글에러](https://mirumkan.github.io/images/db/mysql/mysql-hangul-error/insert-error.png){: width="100%" height="100%"}
 
 
 <br>
@@ -22,7 +22,7 @@ Ubuntu 18.04 버전에서 MySQL 설치 후 테이블에 한글 데이터 입력�
 show variables like 'c%';
 ~~~
 
-![캐릭터셋](https://devbooja.github.io/images/db/mysql/mysql-hangul-error/mysql-character-variables.png){: width="100%" height="100%"}
+![캐릭터셋](https://mirukman.github.io/images/db/mysql/mysql-hangul-error/mysql-character-variables.png){: width="100%" height="100%"}
 
 'latin'으로 되어있는 설정들이 몇 보인다. 이 부분들을 utf8로 변경해주어야한다.
 
@@ -68,7 +68,7 @@ sudo systemctl restart mysql
 
 이후 다시 mysql에 접속해서 변경된 캐릭터셋을 확인해보면 아래 그림과 같이 'latin'이던 캐릭터셋들이 'utf8'로 변경된 것을 확인할 수 있다.
 
-![캐릭터셋](https://devbooja.github.io/images/db/mysql/mysql-hangul-error/changed-character-set.png){: width="100%" height="100%"}
+![캐릭터셋](https://mirukman.github.io/images/db/mysql/mysql-hangul-error/changed-character-set.png){: width="100%" height="100%"}
 
 
 이후 다시 mysql에서 데이터 조회, 입력 등을 하니 문제가 없다.
