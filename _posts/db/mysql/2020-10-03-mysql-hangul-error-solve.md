@@ -8,7 +8,7 @@ tags: [mysql한글]
 
 Ubuntu 18.04 버전에서 MySQL 설치 후 테이블에 한글 데이터 입력이 되지 않는 문제
 
-![한글에러](https://mirumkan.github.io/images/db/mysql/mysql-hangul-error/insert-error.png){: width="100%" height="100%"}
+![한글에러](https://mirukman.github.io/images/db/mysql/mysql-hangul-error/insert-error.png){: width="100%" height="100%"}
 
 
 <br>
