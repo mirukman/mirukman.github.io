@@ -15,6 +15,8 @@ tags: [우분투,리눅스,윈도우,부팅,usb,ubuntu,linux,windows,usb]
 ### 1. Windows10 ISO 파일 다운로드 ###
 ---
 
+VirtualBox에서 가상머신에 Windows 10 설치를 위해서 Windows 10 ISO 파일을 다운로드한다.
+
 아래 링크에서 Windows 10 ISO 이미지 파일 다운로드
 
 [https://www.microsoft.com/ko-kr/software-download/windows10ISO](https://www.microsoft.com/ko-kr/software-download/windows10ISO)
@@ -24,27 +26,21 @@ tags: [우분투,리눅스,윈도우,부팅,usb,ubuntu,linux,windows,usb]
 ### 2. virtualbox 다운로드 ###
 ---
 
+[https://www.virtualbox.org/wiki/Downloads](https://www.virtualbox.org/wiki/Downloads) 링크에서 수동으로 다운받아도 된다.
+
+아래 스크립트는 우분투 리눅스 18.04 LTS 버전 기준으로 확실히 동작한다. 혹시 버전이나 다른 문제로 VirtualBox 6.0이 설치가 되지 않거나 혹은 찜찜하면 수동으로 받는걸 추천한다.
+
 ~~~ bash
 $ wget -q https://www.virtualbox.org/download/oracle_vbox_2016.asc -O- | sudo apt-key add
-~~~
 
-~~~ bash
 $ echo "deb [arch=amd64] http://download.virtualbox.org/virtualbox/debian bionic contrib" | sudo tee /etc/apt/sources.list.d/virtualbox.list
-~~~
 
-~~~ bash
 $ sudo apt-get update
-~~~
 
-~~~ bash
 $ sudo apt-get -y install virtualbox-6.0
-~~~
 
-~~~ bash
 $ systemctl status vboxdrv
-~~~
 
-~~~ bash
 $ virtualbox
 ~~~
 
@@ -61,7 +57,7 @@ VirtualBox 관리자 창에서
 
 예를 들어 6.0 버전 링크를 클릭하면 아래 사진과 같이 세부적인 버전으로 또 나뉜다.
 
-![virtualbox 다운로드 페이지](https://mirukman.github.io/images/it/make-windows10-booting-usb-on-ubuntu/virtualbox-old-versions.png){: width="60%" height="60%"}
+![virtualbox 다운로드 페이지](https://mirukman.github.io/images/it/make-windows10-booting-usb-on-ubuntu/virtualbox-old-versions.png){: width="100%" height="100%"}
 
 여기서 자신의 VirtualBox 버전에 맞는 버전의 Extension Pack을 클릭한다.
 
