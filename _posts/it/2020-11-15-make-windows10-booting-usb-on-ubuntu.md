@@ -107,9 +107,10 @@ $ sudo usermod -aG vboxusers <username>
 
 설치한 가상머신에 마우스 우측클릭 후 설정에 진입한다. 그러면 USB 탭이 있는데 거기에서 자신의 USB 타입(1.0/2.0/3.0)에 맞는 컨트롤러를 선택 후 새로운 USB 컨트롤러 추가 버튼을 누르면 자신의 컴퓨터에 연결된 USB 컨트롤러가 나타난다. 이를 선택하여 등록해준다.
 
-![https://mirukman.github.io/images/it/add-usb-controller-1.png](https://mirukman.github.io/images/it/add-usb-controller-1.png){: width="60%" height="60%"}
 
-![https://mirukman.github.io/images/it/add-usb-controller-2.png](https://mirukman.github.io/images/it/add-usb-controller-2.png){: width="60%" height="60%"}
+![https://mirukman.github.io/images/it/add-usb-controller-1.png](https://mirukman.github.io/images/it/make-windows10-booting-usb-on-ubuntu/add-usb-controller-1.png){: width="60%" height="60%"}
+
+![https://mirukman.github.io/images/it/add-usb-controller-2.png](https://mirukman.github.io/images/it/make-windows10-booting-usb-on-ubuntu/add-usb-controller-2.png){: width="60%" height="60%"}
 
 <br>
 
