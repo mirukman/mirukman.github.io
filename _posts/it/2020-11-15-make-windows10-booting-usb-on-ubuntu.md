@@ -51,7 +51,7 @@ $ virtualbox
 
 VirtualBox 관리자 창에서
 
-\[도움말\] - \[VirtualBox 정보\] 화면에서 VirtualBox 버전을 확인한다.
+**\[도움말\] - \[VirtualBox 정보\]** 화면에서 VirtualBox 버전을 확인한다.
 
 이후 [https://www.virtualbox.org/wiki/Download_Old_Builds](https://www.virtualbox.org/wiki/Download_Old_Builds) 에서 자신의 VirtualBox 버전에 맞는 링크를 클릭한다.
 
@@ -63,7 +63,7 @@ VirtualBox 관리자 창에서
 
 그럼 자동으로 다운로드가 받아지면서 virtualbox 관리자 화면이 뜨고 추가할 것인지 묻는 메시지창이 나타난다. 확인을 누르고 설치를 하면 된다.
 
-만약 자동으로 확장팩 추가 안내창이 뜨지 않으면 VirtualBox 관리자 창에서 \[파일\] - \[환경설정\] - \[확장팩(Extension Pack)\] 메뉴에 들어가 수동으로 추가해주면 된다.
+만약 자동으로 확장팩 추가 안내창이 뜨지 않으면 VirtualBox 관리자 창에서 **\[파일\] - \[환경설정\] - \[확장팩(Extension Pack)\]** 메뉴에 들어가 수동으로 추가해주면 된다.
 
 <br>
 
@@ -87,7 +87,7 @@ Windows10 가상머신을 생성한다.
 $ sudo usermod -aG vboxusers <username>
 ~~~
 
-<username>에는 ubuntu 사용자 계정이름을 넣어주면 된다.
+\<username\>에는 ubuntu 사용자 계정이름을 넣어주면 된다.
 
 <br>
 
