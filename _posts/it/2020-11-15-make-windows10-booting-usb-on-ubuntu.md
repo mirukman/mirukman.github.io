@@ -89,6 +89,8 @@ $ sudo usermod -aG vboxusers <username>
 
 <username>에는 ubuntu 사용자 계정이름을 넣어주면 된다.
 
+<br>
+
 ### 6. 재부팅 ###
 ---
 
