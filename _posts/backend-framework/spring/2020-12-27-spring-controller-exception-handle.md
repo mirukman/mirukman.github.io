@@ -2,7 +2,7 @@
 title: @ControllerAdvice를 통한 스프링 컨트롤러 exception 처리
 author: mirukman
 date: 2020-12-27 16:00:00 +0800
-categories: [BACKEND, SPRING]
+categories: [BACK-END, SPRING]
 tags: [spring,파라미터,스프링,parameter,initbinder,dateformat,requestparam,modelattribute]
 ---
 

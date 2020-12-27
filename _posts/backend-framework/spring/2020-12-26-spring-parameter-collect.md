@@ -2,7 +2,7 @@
 title: MVC 컨트롤러에서 요청 파라미터 바인딩을 하는 여러가지 방법들
 author: mirukman
 date: 2020-12-26 16:00:00 +0800
-categories: [BACKEND, SPRING]
+categories: [BACK-END, SPRING]
 tags: [spring,파라미터,스프링,parameter,initbinder,dateformat,requestparam,modelattribute]
 ---
 

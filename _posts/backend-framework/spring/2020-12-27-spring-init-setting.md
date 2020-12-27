@@ -2,7 +2,7 @@
 title: 스프링 웹 MVC를 위한 기본적인 의존성 및 설정 초기 세팅
 author: mirukman
 date: 2020-12-27 17:00:00 +0800
-categories: [BACKEND, SPRING]
+categories: [BACK-END, SPRING]
 tags: [spring,스프링,설정,config,의존성]
 ---
 

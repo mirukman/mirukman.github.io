@@ -2,7 +2,7 @@
 title: 리액트 컴포넌트 함수 바인딩과 this의 범위
 author: mirukman
 date: 2020-10-11 20:00:00 +0800
-categories: [FRONT, REACT]
+categories: [FRONT-END, REACT]
 tags: [react, component, function, binding, 리액트, 컴포넌트, 함수, 바인딩, this]
 ---
 
