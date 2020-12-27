@@ -1,5 +1,5 @@
 ---
-title: \[스프링\] @ControllerAdvice를 통한 컨트롤러 exception 처리
+title: [스프링] @ControllerAdvice를 통한 컨트롤러 exception 처리
 author: mirukman
 date: 2020-12-27 16:00:00 +0800
 categories: [BACKEND, SPRING]
@@ -8,7 +8,7 @@ tags: [spring,파라미터,스프링,parameter,initbinder,dateformat,requestpara
 
 @ControllerAdvice는 스프링 프로젝트 내의 컨트롤러들에 대해 공통적으로 적용하기 위한 전역 코드를 작성할 때 사용하는 어노테이션이다. 거의 대부분은 @ExceptionHandler 어노테이션과 같이 사용해서 컨트롤러의 전역 예외처리를 위해서 사용한다.
 
-여기서는 @ControllerAdvice는 \+ @ExceptionHandler 두 어노테이션을 조합하여 스프링 컨트롤러의 전역 처리기를 만드는 방법을 정리한다.
+여기서는 @ControllerAdvice \+ @ExceptionHandler 두 어노테이션을 조합하여 스프링 컨트롤러의 전역 처리기를 만드는 방법을 정리한다.
 
 ~~~ java
 @ControllerAdvice

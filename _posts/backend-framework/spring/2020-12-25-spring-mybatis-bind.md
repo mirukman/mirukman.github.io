@@ -1,5 +1,5 @@
 ---
-title: Spring과 MyBatis 연동해서 사용하기(설정,예제코드)
+title: [스프링] Spring과 MyBatis 연동해서 사용하기(설정,예제코드)
 author: mirukman
 date: 2020-12-25 13:00:00 +0800
 categories: [BACKEND, SPRING]
