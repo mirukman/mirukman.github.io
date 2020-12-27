@@ -1,5 +1,5 @@
 ---
-title: [스프링] @ControllerAdvice를 통한 컨트롤러 exception 처리
+title: @ControllerAdvice를 통한 스프링 컨트롤러 exception 처리
 author: mirukman
 date: 2020-12-27 16:00:00 +0800
 categories: [BACKEND, SPRING]
