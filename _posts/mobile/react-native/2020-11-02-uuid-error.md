@@ -2,7 +2,7 @@
 title: uuid crypto.getRandomValues() 에러 해결방법
 author: mirukman
 date: 2020-11-02 23:00:00 +0800
-categories: [mobile, react-native]
+categories: [MOBILE, REACT-NATIVE]
 tags: [react-native,리액트,네이티브,네비게이션,uuid,getrandomvalues,에러]
 ---
 

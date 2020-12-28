@@ -2,7 +2,7 @@
 title: 리눅스 우분투에서 리액트 네이티브 안드로이드 개발환경 세팅
 author: mirukman
 date: 2020-11-01 17:00:00 +0800
-categories: [mobile, react-native]
+categories: [MOBILE, REACT-NATIVE]
 tags: [react-native,리액트,네이티브,우분투,안드로이드,개발환경,세팅,설정]
 ---
 

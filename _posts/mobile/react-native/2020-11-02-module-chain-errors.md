@@ -2,7 +2,7 @@
 title: 리액트 네이티브 네비게이션 모듈 인식불가 에러 해결방법
 author: mirukman
 date: 2020-11-02 22:00:00 +0800
-categories: [mobile, react-native]
+categories: [MOBILE, REACT-NATIVE]
 tags: [react-native,리액트,네이티브,네비게이션,모듈,에러,cannot,resolve]
 ---
 
